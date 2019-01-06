@@ -7,22 +7,34 @@
   <body>
     <script type="text/javascript">
 
-      var ano = 2018;
-      document.write("Flavio tem " + (ano - 1977) + " anos");
-      document.write("<br>");
+      function pulaLinha(valor){
+        for (var i = 0; i < valor; i++) {
+          document.write("<br>");
+        }
+      }
 
-      document.write("Joaquim tem " + (ano - 1996) + " anos");
-      document.write("<br>");
+      function mostra(frase){
+        document.write(frase);
+      }
+
+      var ano = 2018;
+      mostra("Flavio tem " + (ano - 1977) + " anos");
+      pulaLinha(2);
+
+      mostra("Joaquim tem " + (ano - 1996) + " anos");
+      pulaLinha(3);
 
       ano = 2019;
 
-      document.write("Barney tem " + (ano - 1976) + " anos");
-      document.write("<br>");
+      mostra("Barney tem " + (ano - 1976) + " anos");
+      pulaLinha(4);
 
       var media = (39 + 20 + 41) / 3;
-      document.write(media+ "<br>");
+      mostra(media);
+      pulaLinha(5);
 
-      document.write("A media das idades é " + Math.round(media));
+      mostra("A media das idades é " + Math.round(media));
+      //mostra();
     </script>
   </body>
 </html>
