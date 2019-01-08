@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+      }
+
+      //Math.roud() -> arredonda de decimal para inteiro
+      //Math.randon -> coloca numero aleatório
+      var numeroPensado = Math.round(Math.random() * 100);  //o numero indica a quantidade de numeros a serem randomizados
+
+      console.log(numeroPensado); // verifica no console do navegado no modo desenvolvedor o valor do numero randomizado
+
+      var chute = parseInt(prompt("Digite seu número: "));
+
+      if(chute == numeroPensado){
+          mostra("Você acertou!")
+      }else{
+        mostra("Você errou")
+      }
+    </script>
+
+  </body>
+</html>
