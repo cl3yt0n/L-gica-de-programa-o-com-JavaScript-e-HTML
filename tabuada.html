@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+      }
+
+      function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+      }
+      
+      mostra("*************Tabuada************");
+      var tabuada = parseInt(prompt("Digite o valor da tabuada: "));
+
+      for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        result = tabuada * multiplicador;
+        mostra(tabuada + " x " + multiplicador + " = " + result);
+      }
+    </script>
+
+  </body>
+</html>
