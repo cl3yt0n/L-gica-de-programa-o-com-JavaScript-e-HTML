@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      function pulaLinha(){
+        document.write("<br>");
+        //document.write("<br>");
+      }
+
+      function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+      }
+
+      for(linha = 0; linha < 3; linha++){
+        for(coluna = 0; coluna < 10; coluna++){
+          document.write("*");
+        }
+        pulaLinha();
+      }
+
+    </script>
+
+  </body>
+</html>
