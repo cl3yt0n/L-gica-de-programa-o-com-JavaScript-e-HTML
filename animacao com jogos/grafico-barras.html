@@ -1,0 +1,40 @@
+<canvas width="600" height="400"></canvas>
+
+<script type="text/javascript">
+	
+	function desenhaRetangulo(x, y, largura, altura, cor){
+		var tela = document.querySelector('canvas');
+		var pincel = tela.getContext('2d');
+
+		pincel.fillStyle = cor;
+		pincel.fillRect(x, y, largura, altura);
+		pincel.fillStroke = 'black';
+		pincel.strokeRect(x, y, largura, altura);
+	}
+
+	function desenhaCor(x, y, texto){
+		var tela = document.querySelector('canvas');
+		var pincel = tela.getContext('2d');
+
+		pincel.font = '15px Georgia';
+		pincel.fillStyle = 'black';
+		pincel.fillRect(texto, x, y);
+	}
+
+	var serie2015 = [50, 25, 20, 5];
+	var serie2016 = [65, 20, 13, 2];
+	var cores = ['blue', 'green', 'yellow', 'red'];
+
+	function desenhaBarra(x, y, serie, cores, texto){
+		for(int i = 0; i < 4; i++){
+			//desenhaRetangulo(x, y, serie2015[i], cores[i]);
+			//desenhaCor(x, y, cores[i]);
+			document.write(serie[i]);
+		}
+
+	}
+
+	
+	desenhaBarra(50, 50, serie2015, cores, 'Série 2015: [50, 25, 20, 5]')
+
+</script>

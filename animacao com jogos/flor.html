@@ -1,0 +1,123 @@
+<canvas width="600" height="400"></canvas>
+
+<script type="text/javascript">
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext("2d");
+
+	pincel.fillStyle = 'lightgray';
+	pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2*3.14);
+        pincel.fill();
+    }
+
+/*
+    a = 0;
+    b = 60;
+   	    function flor(b) {
+	    	for(y = 40; y <= 380; y += 40){
+	    		desenhaCirculo(b, y, 20, 'red');
+	    		a += 40;
+
+		    	for(x = 20; x <= 580; x += 80){
+		    		desenhaCirculo(x, a, 20, 'yellow');
+		    	}
+	    	}
+	    }
+	    
+for(b = 60; b <= 540; b += 80){
+    flor(b);
+}
+*/
+			desenhaCirculo(540, 160, 20, 'red');
+		    desenhaCirculo(540, 200, 20, 'yellow')
+		    desenhaCirculo(540, 240, 20, 'blue');
+		    desenhaCirculo(500, 200, 20, 'orange');
+		    desenhaCirculo(580, 200, 20, 'black');
+
+			desenhaCirculo(460, 160, 20, 'red');
+		    desenhaCirculo(460, 200, 20, 'yellow')
+		    desenhaCirculo(460, 240, 20, 'blue');
+		    desenhaCirculo(420, 200, 20, 'orange');
+		    desenhaCirculo(500, 200, 20, 'black');
+
+			desenhaCirculo(380, 160, 20, 'red');
+		    desenhaCirculo(380, 200, 20, 'yellow')
+		    desenhaCirculo(380, 240, 20, 'blue');
+		    desenhaCirculo(340, 200, 20, 'orange');
+		    desenhaCirculo(420, 200, 20, 'black');
+
+			desenhaCirculo(300, 160, 20, 'red');
+		    desenhaCirculo(300, 200, 20, 'yellow')
+		    desenhaCirculo(300, 240, 20, 'blue');
+		    desenhaCirculo(260, 200, 20, 'orange');
+		    desenhaCirculo(340, 200, 20, 'black');
+
+			desenhaCirculo(220, 160, 20, 'red');
+		    desenhaCirculo(220, 200, 20, 'yellow')
+		    desenhaCirculo(220, 240, 20, 'blue');
+		    desenhaCirculo(180, 200, 20, 'orange');
+		    desenhaCirculo(260, 200, 20, 'black');
+
+		    desenhaCirculo(140, 160, 20, 'red');
+		    desenhaCirculo(140, 200, 20, 'yellow')
+		    desenhaCirculo(140, 240, 20, 'blue');
+		    desenhaCirculo(100, 200, 20, 'orange');
+		    desenhaCirculo(180, 200, 20, 'black');
+
+			desenhaCirculo(60, 160, 20, 'red');
+		    desenhaCirculo(60, 200, 20, 'yellow')
+		    desenhaCirculo(60, 240, 20, 'blue');
+		    desenhaCirculo(20, 200, 20, 'orange');
+		    desenhaCirculo(100, 200, 20, 'black');
+
+
+
+
+
+			desenhaCirculo(540, 20, 20, 'red');
+		    desenhaCirculo(540, 60, 20, 'yellow')
+		    desenhaCirculo(540, 100, 20, 'blue');
+		    desenhaCirculo(500, 60, 20, 'orange');
+		    desenhaCirculo(580, 60, 20, 'black');
+
+			desenhaCirculo(460, 20, 20, 'red');
+		    desenhaCirculo(460, 60, 20, 'yellow')
+		    desenhaCirculo(460, 100, 20, 'blue');
+		    desenhaCirculo(420, 60, 20, 'orange');
+		    desenhaCirculo(500, 60, 20, 'black');
+
+			desenhaCirculo(380, 20, 20, 'red');
+		    desenhaCirculo(380, 60, 20, 'yellow')
+		    desenhaCirculo(380, 100, 20, 'blue');
+		    desenhaCirculo(340, 60, 20, 'orange');
+		    desenhaCirculo(420, 60, 20, 'black');
+
+			desenhaCirculo(300, 20, 20, 'red');
+		    desenhaCirculo(300, 60, 20, 'yellow')
+		    desenhaCirculo(300, 100, 20, 'blue');
+		    desenhaCirculo(260, 60, 20, 'orange');
+		    desenhaCirculo(340, 60, 20, 'black');
+
+			desenhaCirculo(220, 20, 20, 'red');
+		    desenhaCirculo(220, 60, 20, 'yellow')
+		    desenhaCirculo(220, 100, 20, 'blue');
+		    desenhaCirculo(180, 60, 20, 'orange');
+		    desenhaCirculo(260, 60, 20, 'black');
+
+		    desenhaCirculo(140, 20, 20, 'red');
+		    desenhaCirculo(140, 60, 20, 'yellow')
+		    desenhaCirculo(140, 100, 20, 'blue');
+		    desenhaCirculo(100, 60, 20, 'orange');
+		    desenhaCirculo(180, 60, 20, 'black');
+
+			desenhaCirculo(60, 20, 20, 'red');
+		    desenhaCirculo(60, 60, 20, 'yellow')
+		    desenhaCirculo(60, 100, 20, 'blue');
+		    desenhaCirculo(20, 60, 20, 'orange');
+		    desenhaCirculo(100, 60, 20, 'black');
+</script>

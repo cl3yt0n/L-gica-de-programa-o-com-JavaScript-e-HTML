@@ -1,0 +1,55 @@
+<canvas width="1300" height="800"></canvas>
+
+<script type="text/javascript">
+	
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    function creeper(cor, x, y, largura, altura){
+    	pincel.fillStyle = cor;
+    	pincel.fillRect(x, y, largura, altura);
+    }
+
+    // cabeça
+    creeper('darkgreen', 450, 30, 280, 230); //cor, x, y, largura e altura
+
+    // olhos?
+   
+     creeper('black', 505, 80, 60, 60);
+
+	creeper('black', 615, 80, 60, 60); 
+
+    //nariz
+    creeper('black', 563, 140, 53, 70);
+
+    //boca
+    creeper('black', 530, 165, 35, 70);
+
+    creeper('black',615, 165, 35, 70);
+
+    //corpo
+    creeper('darkgreen', 500, 260, 180, 160);
+
+    //braço
+    creeper('darkgreen', 460, 290, 50, 80);    
+    creeper('darkgreen', 670, 290, 50, 80);
+
+    creeper('black', 500, 290, 1, 80);
+    creeper('black', 680, 290, 1, 80);
+
+    creeper('black', 460, 360, 40, 10);
+	creeper('black', 680, 360, 40, 10);
+
+    //pe
+    creeper('darkgreen', 500, 420, 70, 60);
+
+    creeper('darkgreen', 610, 420, 70, 60);
+
+    //sapato
+    creeper('black', 500, 470, 70, 20);
+
+    creeper('black', 610, 470, 70, 20);
+
+    creeper('black', 450, 260, 280, 1);
+    creeper('black', 500, 420, 180, 1);
+</script>
